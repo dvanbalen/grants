@@ -2,15 +2,15 @@
   <tableName>Grant Categorization</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </descriptionCol>
   <ruleNameColumn>
     <hideColumn>true</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </ruleNameColumn>
   <metadataCols/>
   <attributeCols/>
@@ -22,8 +22,8 @@
       <conditions>
         <org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Check Amount</header>
+          <width>100</width>
+          <header>&gt; 100,000</header>
           <constraintValueType>1</constraintValueType>
           <factField>dollarAmount</factField>
           <fieldType>Double</fieldType>
@@ -36,17 +36,35 @@
             <isOtherwise>false</isOtherwise>
           </value>
         </org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
+        <org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
+          <hideColumn>false</hideColumn>
+          <width>239</width>
+          <header>&lt;= 100,000</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>dollarAmount</factField>
+          <fieldType>Double</fieldType>
+          <operator>&lt;=</operator>
+          <parameters/>
+          <binding></binding>
+          <value>
+            <valueNumeric class="double">100000.0</valueNumeric>
+            <valueString></valueString>
+            <dataType>NUMERIC_DOUBLE</dataType>
+            <isOtherwise>false</isOtherwise>
+          </value>
+        </org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
       </conditions>
       <window>
         <parameters/>
       </window>
+      <entryPointName></entryPointName>
     </Pattern52>
   </conditionPatterns>
   <actionCols>
     <org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryActionSetFieldCol52>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Add category</header>
+      <width>277</width>
+      <header>Large Grant Categorization</header>
       <boundName>$grant</boundName>
       <factField>categories</factField>
       <type>Collection</type>
@@ -95,9 +113,9 @@
   <data>
     <list>
       <value>
-        <valueNumeric>1</valueNumeric>
+        <valueNumeric class="int">1</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -122,12 +140,18 @@
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
-        <valueNumeric>2</valueNumeric>
+        <valueNumeric class="int">2</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -138,6 +162,12 @@
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -146,7 +176,12 @@
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../list/value[5]"/>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
   </data>
 </decision-table52>
