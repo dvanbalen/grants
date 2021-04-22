@@ -8,10 +8,10 @@ public class GrantApplication implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Dollar Amount")
+	@org.kie.api.definition.type.Label("Dollar Amount")
 	private java.lang.Double dollarAmount;
-	@org.kie.api.definition.type.Label(value = "Grant Category")
-	private java.lang.String category;
+	@org.kie.api.definition.type.Label(value = "Grant Categories")
+	private java.util.List<java.lang.String> categories;
 
 	public GrantApplication() {
 	}
@@ -24,18 +24,18 @@ public class GrantApplication implements java.io.Serializable {
 		this.dollarAmount = dollarAmount;
 	}
 
-	public java.lang.String getCategory() {
-		return this.category;
+	public java.util.List<java.lang.String> getCategories() {
+		return this.categories;
 	}
 
-	public void setCategory(java.lang.String category) {
-		this.category = category;
+	public void setCategories(java.util.List<java.lang.String> categories) {
+		this.categories = categories;
 	}
 
 	public GrantApplication(java.lang.Double dollarAmount,
-			java.lang.String category) {
+			java.util.List<java.lang.String> categories) {
 		this.dollarAmount = dollarAmount;
-		this.category = category;
+		this.categories = categories;
 	}
 
 }
