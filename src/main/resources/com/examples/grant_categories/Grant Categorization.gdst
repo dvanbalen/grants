@@ -75,6 +75,20 @@
         <isOtherwise>false</isOtherwise>
       </value>
     </org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryActionSetFieldCol52>
+    <org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryActionSetFieldCol52>
+      <hideColumn>false</hideColumn>
+      <width>215</width>
+      <header>Small Grant Categorization</header>
+      <boundName>$grant</boundName>
+      <factField>categories</factField>
+      <type>Collection</type>
+      <update>false</update>
+      <value>
+        <valueString>$grant.categories.add(&quot;Low Cost&quot;)</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryActionSetFieldCol52>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -146,6 +160,12 @@
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
@@ -178,6 +198,12 @@
       </value>
       <value>
         <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
