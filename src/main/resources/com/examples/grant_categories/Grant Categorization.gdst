@@ -79,7 +79,7 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>true</hideColumn>
       <width>-1</width>
-      <header>Grant Category</header>
+      <header>Add Grant Category</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>if($grant.getCategories()==null) { $grant.setCategories(new java.util.ArrayList()); }</text>
@@ -97,12 +97,27 @@
           </typedDefaultValue>
           <hideColumn>true</hideColumn>
           <width>100</width>
-          <header>Grant Category</header>
+          <header>Add Grant Category</header>
           <varName>category</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+    <set-field-col52>
+      <typedDefaultValue>
+        <valueString>Uncategorized</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>100</width>
+      <header>Grant Category</header>
+      <boundName>$grant</boundName>
+      <factField>category</factField>
+      <type>String</type>
+      <valueList>A123, B456, C789, Uncategorized</valueList>
+      <update>false</update>
+    </set-field-col52>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -181,6 +196,11 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+      <value>
+        <valueString>Uncategorized</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
@@ -217,6 +237,11 @@
       </value>
       <value>
         <valueString>Small</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Uncategorized</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
