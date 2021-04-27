@@ -68,7 +68,7 @@
       <header>Grant Category</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>if($grant.getCategories()==null) { $grant.setCategories(new ArrayList&lt;String&gt;()); }</text>
+          <text>if($grant.getCategories()==null) { $grant.setCategories(new java.util.ArrayList&lt;String&gt;()); }</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>$grant.getCategories().add( &quot;@{category}&quot; );</text>
