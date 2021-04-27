@@ -61,7 +61,7 @@
               <step>GrantApplication</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>categories</step>
+              <step>category</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
@@ -72,12 +72,9 @@
             <name>1|1</name>
             <className>com.examples.grant_categories.GrantApplication</className>
           </factIdentifier>
-          <className>java.util.List</className>
+          <className>java.lang.String</className>
           <factAlias>GrantApplication</factAlias>
-          <expressionAlias>categories</expressionAlias>
-          <genericTypes>
-            <string>java.lang.String</string>
-          </genericTypes>
+          <expressionAlias>category</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>402.0</columnWidth>
         </FactMapping>
@@ -127,7 +124,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">[{&quot;value&quot;:&quot;Small&quot;}]</rawValue>
+            <rawValue class="string">A123</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
