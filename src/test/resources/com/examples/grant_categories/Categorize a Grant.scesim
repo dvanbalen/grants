@@ -170,9 +170,10 @@
     </scesimData>
   </background>
   <settings>
+    <dmoSession>grants-ksession</dmoSession>
     <type>RULE</type>
     <skipFromBuild>false</skipFromBuild>
-    <stateless>false</stateless>
+    <stateless>true</stateless>
   </settings>
   <imports>
     <imports/>
