@@ -92,6 +92,7 @@
               <name>Description</name>
               <type>OTHER</type>
             </expressionIdentifier>
+            <rawValue class="string">Test for a small grant</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
