@@ -76,33 +76,6 @@
     </Pattern52>
   </conditionPatterns>
   <actionCols>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>true</hideColumn>
-      <width>-1</width>
-      <header>Add Grant Category</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>if($grant.getCategories()==null) { $grant.setCategories(new java.util.ArrayList()); }</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>$grant.getCategories().add( &quot;@{category}&quot; );</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <typedDefaultValue>
-            <valueString>Uncategorized</valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>true</hideColumn>
-          <width>100</width>
-          <header>Add Grant Category</header>
-          <varName>category</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
     <set-field-col52>
       <typedDefaultValue>
         <valueString>Uncategorized</valueString>
@@ -192,11 +165,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Large</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>B456</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -232,11 +200,6 @@
       </value>
       <value>
         <valueString>1000000</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Small</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
