@@ -68,6 +68,9 @@
       <header>Grant Category</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
+          <text>if($grant.getCategories()==null) { $grant.setCategories(new ArrayList&lt;String&gt;()); }</text>
+        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
+        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>$grant.getCategories().add( &quot;@{category}&quot; );</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
@@ -125,6 +128,7 @@
     <list>
       <value>
         <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -157,6 +161,7 @@
     <list>
       <value>
         <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
