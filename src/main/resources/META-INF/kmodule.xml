@@ -1,5 +1,5 @@
 <kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <kbase name="grants-kbases" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="com.examples" includes="grants-kbase">
+  <kbase name="" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="com.examples" includes="grants-kbase">
     <ksession name="grants-ksession" type="stateless" default="true" clockType="realtime"/>
   </kbase>
 </kmodule>
