@@ -10,7 +10,7 @@ public class GrantApplication implements java.io.Serializable {
 
 	@org.kie.api.definition.type.Label("Dollar Amount")
 	private java.lang.Double dollarAmount;
-	@org.kie.api.definition.type.Label(value = "Grant Category")
+	@org.kie.api.definition.type.Label("Grant Category")
 	private java.lang.String category;
 
 	public GrantApplication() {
